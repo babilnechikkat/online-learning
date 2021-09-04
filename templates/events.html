@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iguard-Events</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/iduardlogo.jpg' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.2.1
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="{% url 'home' %}">iguard talent mentors</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="{% url 'trainers' %}">Trainers</a></li>
+          <li class="active"><a href="{% url 'events' %}">Events</a></li>
+         
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="{% url 'courses' %}"  class="get-started-btn">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Events</h2>
+        
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/pythondjango.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="{% url 'djangoevent' %}">Python django</a></h5>
+                <p class="font-italic text-center">click the link</p>
+                <p class="card-text">Python is one of the most effective ways to get your desired position and pay, but it must be borne in mind that you learn a language not just to earn well, but also to upgrade your skills and stay updated with market trends</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/cyber security.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="{% url 'cybers' %}">Cyber security</a></h5>
+                <p class="font-italic text-center">click the link</p>
+                <p class="card-text">The BLS predicts cybersecurity jobs will grow 31% through 2029, over seven times faster than the national average job growth of 4%. ... Burning Glass has been tracking demand for cybersecurity skills based on its database of more than one billion current and historical job postings.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 offset-3 d-flex align-items-center">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'img/android.jpg' %}" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="{% url 'android' %}">Android developing</a></h5>
+                <p class="font-italic text-center">click the link</p>
+                <p class="card-text">
+                  Is the demand for android developers high? There is an extremely high demand for android developers, both entry-level and experienced. Android apps continue to grow in popularity, creating a wide variety of job opportunities. You can work either as a permanent employee or as a freelancer</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color: lightgreen;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-6 footer-contact" style="padding-left: 450px;">
+            
+          
+              <h3>iguard talent mentors</h3><br>
+          
+              <div>
+              
+             <p class="text-center">Near Calicut univercity,kinfra Industrial park,<br>Malappuram,Kerala<br>
+              &emsp;India <br><br>
+              <strong>Phone:</strong>+91 92490 09600<br>
+              <strong>Email:</strong> www.iguardtalent@gmail.com<br>
+            </p></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright" style="padding-left: 400px;">
+          &copy; Copyright <strong><span>iguard talent mentors</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js' %}/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main js' %} File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>

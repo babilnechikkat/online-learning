@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>iguard-meeting</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/iduardlogo.jpg' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.2.1
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="{% url 'home' %}">iguard talent mentors</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="{% static 'img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <!-- <li><a href="{% url 'about' %}">About</a></li> -->
+          <li><a href="{% url 'courses' %}">Courses</a></li>
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <!-- <a href="{% url 'courses' %}"  class="get-started-btn">Get Started</a> -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Class room</h2>
+        <p>IGuard Talent Mentors. Software Company · Kinfra Techno Industrial Park Calicut, Kerala, India, </p>
+      </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      
+
+      <div class="container" data-aos="fade-up">
+        <br>
+        <h2 style="color:blue;">Google meet link</h2>
+        <h3 style="color: green;"><b>Python django</b></h3>
+        <h4>Batch one:<a href="https://meet.google.com/bdr-pdyh-jks"style="color: blue;">Join class room</a></h4>
+        <h4>Batch two:<a href="https://meet.google.com/bdr-pdyh-jks"style="color: blue;">Join class room</a></h4>
+        <h3 style="color: green;"><b>Cyber security</b></h3>
+        
+        <h4>Batch one:<a href=" https://meet.google.com/coz-qukw-due"style="color: blue;">Join class room</a></h4>
+        
+        <h4>Batch two:<a href=" https://meet.google.com/coz-qukw-due"style="color: blue;">Join class room</a></h4>
+        <h3 style="color: green;"><b>Android</b></h3>
+        <h4>Batch one:<a href=" https://meet.google.com/ycu-kynr-xpz"style="color: blue;">Join class room</a></h4>
+        <h4>Batch two:<a href=" https://meet.google.com/ycu-kynr-xpz"style="color: blue;">Join class room</a></h4>
+
+        (No title)
+        Monday, August 16
+        Google Meet joining info
+        Video call link:
+
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <!-- <i class="icofont-google-map"></i> -->
+                <h4>Location:</h4>
+                <p>Kinfra Industrial park,Malappuram,Kerala,673620</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>www.iguardtalent@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 92490 09600</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="{% url 'meeting' %}" method="post"  >{% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <!-- <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="alert">Your message has been sent. Thank you!</div>
+                
+              </div> -->
+<!--               
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form> -->
+            <button onclick="myFunction()">SUBMIT </button>
+
+<script>
+function myFunction() {
+  alert("Hello! Thank you for feedback");
+}
+</script>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" style="background-color: lightgreen;">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-6 footer-contact" style="padding-left: 450px;">
+            
+          
+              <h3>iguard talent mentors</h3><br>
+          
+              <div>
+              
+             <p class="text-center">Near Calicut univercity,kinfra Industrial park,<br>Malappuram,Kerala<br>
+              &emsp;India <br><br>
+              <strong>Phone:</strong>+91 92490 09600<br>
+              <strong>Email:</strong> www.iguardtalent@gmail.com<br>
+            </p></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright" style="padding-left: 400px;">
+          &copy; Copyright <strong><span>iguard talent mentors</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/ws_iguard?lang=en" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/iguardsolution/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/silent_buddha._/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+        <a href="https://in.linkedin.com/in/iguard-solution-kinfra-techno-park-910576110" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
